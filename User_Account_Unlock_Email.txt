@@ -1,0 +1,16 @@
+Hi {fname},{lname} :
+<br>
+Welcome to ABC family, your Registration is almost complete.
+<br>
+please unlock your account using below details:
+<br>
+Temporary Password: {tempPwd}
+<br>
+<a href='http://localhost:9090/unlockAccount?email={emailId}'>
+Click Here To Unlock Your Account
+</a>
+<br>
+<br>
+Thanks & Regards,
+<br>
+ABC Team

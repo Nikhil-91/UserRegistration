@@ -1,0 +1,44 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    username: sa
+    password: null
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+  mvc:
+    view:
+      prefix: /views/
+      suffix: .jsp
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: nikhil38devops@gmail.com
+    password: nikhil@38
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
+          auth: true
+          
+user-reg-app: 
+      messages: 
+        regSucc: Your Registration Almost Completed, Please check email to Unlock Account
+        regFail: Registration Failed
+        accUnlockedState: Account is unlocked state. <a href="index">Please Login</a>
+        unLockSucc: Account Unlocked successfully!!. <a href="index">Please Login</a>
+        passFailUpdate: Password Failed to Update
+        cnfrmPwdNotMatch: Confirm Password and New password not matched
+        tmpInvalid: Temporary Password Entered is Invalid. Please enter valid one
+        recvrPwdSucc: Password sent successfully to mail!! please check
+        recvrPwdFail: Please enter valid email Id
+        invaidCredentials: Invalid Credentials
+        accLockedState: Account in Locked State
